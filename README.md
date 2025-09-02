@@ -1,4 +1,4 @@
-# Olá, me chamo Clara Moreira
+# Olá, me chamo Clara Moreira!
 
 🎓 Estudante de Sistemas de Informação | 2º semestre  
 💻 Apaixonada por tecnologia: Python, desenvolvimento e design
