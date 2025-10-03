@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./agendar.css">
+</head>
+<body>
+   
+    <div class="agendamento-container">
+  <h1>Agende seu atendimento</h1>
+  <form action="#" method="post">
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+    <label for="servico">Serviço desejado:</label>
+    <select id="servico" name="servico" required>
+      <option value="">Selecione</option>
+      <option value="facial">Tratamento Facial</option>
+      <option value="corporal">Tratamento Corporal</option>
+      <option value="especial">Cuidados Especiais</option>
+      <option value="autoestima">Autoestima & Bem-Estar</option>
+    </select>
+
+    <label for="data">Data:</label>
+    <input type="date" id="data" name="data" required>
+
+    <label for="hora">Horário:</label>
+    <input type="time" id="hora" name="hora" required>
+
+    <button type="submit">Confirmar Agendamento</button>
+  </form>
+</div>
+
+<script>
+  document.getElementById("form-agendamento").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const agendamento = {
+      nome: document.getElementById("nome").value,
+      telefone: document.getElementById("telefone").value,
+      servico: document.getElementById("servico").value,
+      data: document.getElementById("data").value,
+      hora: document.getElementById("hora").value
+    };
+
+    // Salva no localStorage
+    let agendamentos = JSON.parse(localStorage.getItem("agendamentos")) || [];
+    agendamentos.push(agendamento);
+    localStorage.setItem("agendamentos", JSON.stringify(agendamentos));
+
+    // Redireciona para a página do administrador
+    window.location.href = "./admin.html";
+  });
+</script>
+
+
+</body>
+</html>

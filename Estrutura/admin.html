@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- admin.html -->
+<div class="admin-container">
+  <h1>Agendamentos Recebidos</h1>
+  <ul id="lista-agendamentos"></ul>
+</div>
+
+<script>
+  const lista = document.getElementById("lista-agendamentos");
+  const agendamentos = JSON.parse(localStorage.getItem("agendamentos")) || [];
+
+  agendamentos.forEach((item, index) => {
+    const li = document.createElement("li");
+    li.innerHTML = `
+      <strong>${item.nome}</strong><br>
+      📞 ${item.telefone}<br>
+      💆‍♀️ ${item.servico}<br>
+      📅 ${item.data} às ${item.hora}<br><hr>
+    `;
+    lista.appendChild(li);
+  });
+</script>
+
+</body>
+</html>

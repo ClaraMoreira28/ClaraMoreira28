@@ -1,0 +1,342 @@
+body{
+    margin: 0;
+    padding: 0;
+   background-color: #ffffff;
+}
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: #9b3f41;
+  font-family: champagne_limousines;
+}
+
+.navbar li a {
+  color: #9b3f41;
+  text-decoration: none;
+  padding: 20px 20px;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.navbar li a:hover {
+  background-color: #a3ae93;
+}
+
+.topo-site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  list-style: none;
+  font-family: champagne_limousines;
+  padding: 10px;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.acao-usuario1 {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+.btn-entrar{
+  background-color: white;
+  color: #c97d77;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: champagne_limousines;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.btn-entrar:hover {
+  background-color: #a65c57;
+  color: white;
+}
+
+.btn-admin {
+  background-color: white;
+  color: #c97d77;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: champagne_limousines;
+  transition: background 0.3s ease;
+}
+
+.btn-admin:hover {
+  background-color: #a65c57;
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-conteudo {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+}
+
+.fechar {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #e91e63;
+  cursor: pointer;
+}
+
+.modal-conteudo input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+modal-conteudo button {
+  background-color: #e91e63;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-conteudo button:hover {
+  background-color: #d81b60;
+}
+
+
+.carrossel-section {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: #ffffff;
+}
+
+@font-face {
+    font-family: 'Altheria';
+    src: url('fontes/Altheria-Regular.ttf') format('truetype');
+}
+
+.carrossel-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+@font-face {
+  font-family: 'champagne_limousines';
+  src: url('fontes/Champagne\ &\ Limousines.ttf') format('truetype');
+}
+.carrossel-section p {
+  font-size: 1.2em;
+  font-family: 'champagne_limousines';
+  margin-bottom: 15px;
+}
+
+.carrossel-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 5px;
+}
+
+.carrossel {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.carrossel img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.carrossel img:hover {
+  transform: scale(1.05);
+}
+
+.resultados {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.resultados h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  font-size: 2em;
+  color: black;
+}
+
+.card p {
+  font-size: 1em;
+  color: black;
+}
+
+.titulo-principal {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 2.5rem;
+  color: black;
+}
+
+/* Container principal */
+.coluna {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Cada serviço como uma coluna */
+.servico {
+  flex: 1 1 30%;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Imagens */
+.servico img {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Títulos */
+.servico h2 {
+  font-size: 1.2rem;
+  color: black;
+  margin: 15px 0 10px;
+}
+
+/* Texto */
+.servico p {
+  font-size: 1rem;
+  color: hsl(0, 0%, 2%);
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Botão */
+.btn-agendar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c97d77;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agendar:hover {
+  background-color: #a65c57;
+}
+
+footer{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: left;
+    background-color: #c97d77;
+    padding: 10px;
+}
+
+.rodape {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.rodape h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.info-contato p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.redes-sociais a {
+  margin-right: 15px;
+}
+
+.redes-sociais img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.redes-sociais img:hover {
+  transform: scale(1.2);
+}

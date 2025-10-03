@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    padding: 0;
+   background-color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: #9b3f41;
+  font-family: champagne_limousines;
+}
+
+.navbar li a {
+  color: #9b3f41;
+  text-decoration: none;
+  padding: 20px 20px;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.navbar li a:hover {
+  background-color: #a3ae93;
+}
+
+.topo-site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  list-style: none;
+  font-family: champagne_limousines;
+  padding: 10px;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.acao-usuario1 {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+.btn-entrar{
+  background-color: white;
+  color: #c97d77;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: champagne_limousines;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.btn-entrar:hover {
+  background-color: #a65c57;
+  color: white;
+}
+
+.servicos-area h2 {
+    text-align: center;
+    color: #9b3f41;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: champagne_limousines;
+}
+
+/* Estilos da área principal (Container Geral) */
+.servicos-area {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fdfdfd;
+    font-family: 'Arial', sans-serif;
+    /* NOVO: Aumenta o espaçamento na parte inferior da seção 
+    para garantir que os cards não encostem no rodapé. */
+    padding-bottom: 100px; 
+}
+
+/* Estilo do parágrafo de descrição */
+.servicos-area p {
+    color: #c97d77;
+    font-family: champagne_limousines;
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto 50px auto; 
+}
+
+/* LAYOUT: Grid para 2 cards por linha */
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 30px;
+    row-gap: 40px; /* Garante o espaço vertical de 40px entre as linhas */
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 15px;
+    align-items: start;
+}
+
+/* Estilo do Card individual */
+.servico-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 25px; 
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1); 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; 
+}
+
+.servico-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* IMAGENS: Voltamos ao tamanho original (120px) para reduzir o card */
+.servico-card img {
+    /* AJUSTADO: Reduzindo o tamanho da imagem */
+    width: 120px; 
+    height: 120px; 
+    
+    object-fit: cover;
+    border-radius: 50%; 
+    margin-bottom: 20px;
+    border: 3px solid #e91e63; 
+}
+
+/* Estilo do título H3 */
+.servico-card h3 {
+    font-size: 1.6rem;
+    color: #9b3f41;
+    margin-bottom: 15px;
+    font-family: champagne_limousines;
+}
+
+/* LISTA: Sem estilo e alinhada à esquerda */
+.servico-card ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    text-align: left; 
+    width: 100%;
+}
+
+.servico-card ul li {
+    font-size: 1rem;
+    color: #555;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee; 
+    line-height: 1.4;
+}
+
+.servico-card ul li:last-child {
+    border-bottom: none; 
+}
+
+footer{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: left;
+    background-color: #c97d77;
+    padding: 10px;
+}
+
+.rodape {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.rodape h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.info-contato p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.redes-sociais a {
+  margin-right: 15px;
+}
+
+.redes-sociais img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.redes-sociais img:hover {
+  transform: scale(1.2);
+}
